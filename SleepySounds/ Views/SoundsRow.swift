@@ -24,6 +24,7 @@ struct SoundsRow: View {
                             Image(systemName: "star.fill")
                                 .foregroundStyle(.yellow)
                         }
+            
         }
         
     }
