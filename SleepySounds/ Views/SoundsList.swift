@@ -8,10 +8,39 @@
 import SwiftUI
 
 struct SoundsList: View {
+    
+    @State private var showFavoritesOnly = false
+    
+    var filteredSounds: [Sounds] {
+            sounds.filter { sound in
+                (!showFavoritesOnly || sound.isFavorite)
+            }
+        }
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationSplitView{
+            List{
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites")
+                    
+                }
+                ForEach(filteredSounds) { sound in
+                    NavigationLink{
+                        SoundDetail(sound: sound)
+                    } label: {
+                        SoundsRow(sound: sound)
+                    }
+                }
+            }
+                .navigationTitle("Sounds")
+            }detail: {
+                Text("Select a sound")
+            }
+        }
+        
     }
-}
+
 
 #Preview {
     SoundsList()

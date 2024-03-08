@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct SoundDetail: View {
+    
+    var sound : Sounds
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            VStack(alignment: .leading) {
+                Text(sound.name).font(.title)
+                
+                HStack{
+                    Text(sound.description)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    SoundDetail()
+    SoundDetail(sound: sounds[0])
 }

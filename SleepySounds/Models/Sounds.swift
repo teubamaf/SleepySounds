@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 
 
-struct Sounds : Hashable, Codable{
+struct Sounds : Hashable, Codable, Identifiable{
     var id: Int
     var name: String
     var description: String
-    var soundsPath: String
+    var soundpath: String
+    var isFavorite: Bool
     
     
     private var imageName: String
