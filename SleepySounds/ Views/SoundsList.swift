@@ -9,10 +9,12 @@ import SwiftUI
 
 struct SoundsList: View {
     
+    @Environment(ModelData.self) var modelData
+    
     @State private var showFavoritesOnly = false
     
     var filteredSounds: [Sounds] {
-            sounds.filter { sound in
+        modelData.sounds.filter { sound in
                 (!showFavoritesOnly || sound.isFavorite)
             }
         }
@@ -34,6 +36,7 @@ struct SoundsList: View {
                 }
             }
                 .navigationTitle("Sounds")
+                .animation(.default, value: filteredSounds)
             }detail: {
                 Text("Select a sound")
             }
@@ -43,5 +46,5 @@ struct SoundsList: View {
 
 
 #Preview {
-    SoundsList()
+    SoundsList().environment(ModelData())
 }

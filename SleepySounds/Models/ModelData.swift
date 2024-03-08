@@ -8,7 +8,11 @@
 import Foundation
 
 
-var sounds: [Sounds] = load("soundsData.json")
+@Observable
+class ModelData {
+    var sounds: [Sounds] = load("soundsData.json")
+}
+
 
 
 func load<T: Decodable>(_ filename: String) -> T {

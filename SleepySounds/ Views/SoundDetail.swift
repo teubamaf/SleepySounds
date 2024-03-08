@@ -26,5 +26,5 @@ struct SoundDetail: View {
 }
 
 #Preview {
-    SoundDetail(sound: sounds[0])
+    SoundDetail(sound: ModelData().sounds[0])
 }

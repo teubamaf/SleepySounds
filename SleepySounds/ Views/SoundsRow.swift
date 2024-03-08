@@ -30,7 +30,8 @@ struct SoundsRow: View {
 }
 
 #Preview {
-    Group{
+    let sounds = ModelData().sounds
+    return Group{
         SoundsRow(sound: sounds[0])
         SoundsRow(sound: sounds[1])
     }
