@@ -20,7 +20,6 @@ struct SoundDetail: View {
                 HStack{
                     Text(sound.description)
                 }
-                
             }
         }
     }

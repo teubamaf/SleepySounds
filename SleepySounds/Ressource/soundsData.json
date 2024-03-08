@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Thunderstorm",
+        "id": 1001,
+        "description": "Thunderstorm",
+        "imageName": "RainFast",
+        "soundpath": "test.mp3",
+        "isFavorite": true,
+    },
+    {
+        "name": "Calm Rain",
+        "id": 1002,
+        "description": "Calm rain",
+        "imageName": "CalmRain",
+        "soundpath": "test.mp3",
+        "isFavorite": true,
+    }
+]
+
+ 

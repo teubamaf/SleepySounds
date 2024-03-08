@@ -18,7 +18,6 @@ struct SoundsList: View {
         }
     
     
-    
     var body: some View {
         NavigationSplitView{
             List{

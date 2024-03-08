@@ -15,7 +15,7 @@ struct Sounds : Hashable, Codable, Identifiable{
     var description: String
     var soundpath: String
     var isFavorite: Bool
-    
+
     
     
     private var imageName: String

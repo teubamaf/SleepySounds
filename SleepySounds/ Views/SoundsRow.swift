@@ -26,7 +26,6 @@ struct SoundsRow: View {
                         }
             
         }
-        
     }
 }
 
