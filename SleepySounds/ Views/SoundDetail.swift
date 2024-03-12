@@ -13,13 +13,25 @@ struct SoundDetail: View {
     
     
     var body: some View {
-        VStack{
-            VStack(alignment: .leading) {
-                Text(sound.name).font(.title)
+        
+        
+        ScrollView{
+            VStack{
+                CircleImage(image: sound.image).offset(y:100)
                 
-                HStack{
+            }
+            
+            VStack(alignment: .leading) {
+                Divider()
+                Text(sound.name)
+                    .font(.title)
+                HStack {
+                    Spacer()
                     Text(sound.description)
                 }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                Divider()
             }
         }
     }
