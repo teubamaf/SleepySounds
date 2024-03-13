@@ -15,6 +15,7 @@
 		6E06AA802B9B04CC0004C97F /* SoundsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E06AA782B9B04CC0004C97F /* SoundsList.swift */; };
 		6E06AA812B9B04CC0004C97F /* SoundsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E06AA792B9B04CC0004C97F /* SoundsRow.swift */; };
 		6E06AA832B9B19430004C97F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E06AA822B9B19430004C97F /* CircleImage.swift */; };
+		6EA632D12BA1A0F100691FB0 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA632D02BA1A0F100691FB0 /* SoundPlayer.swift */; };
 		6EA8E67C2B96061900E3DB5D /* SleepySoundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8E67B2B96061900E3DB5D /* SleepySoundsApp.swift */; };
 		6EA8E6802B96061A00E3DB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA8E67F2B96061A00E3DB5D /* Assets.xcassets */; };
 		6EA8E6832B96061A00E3DB5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA8E6822B96061A00E3DB5D /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		6E06AA782B9B04CC0004C97F /* SoundsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsList.swift; sourceTree = "<group>"; };
 		6E06AA792B9B04CC0004C97F /* SoundsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsRow.swift; sourceTree = "<group>"; };
 		6E06AA822B9B19430004C97F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		6EA632D02BA1A0F100691FB0 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		6EA8E6782B96061900E3DB5D /* SleepySounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepySounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA8E67B2B96061900E3DB5D /* SleepySoundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepySoundsApp.swift; sourceTree = "<group>"; };
 		6EA8E67F2B96061A00E3DB5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				6E06AA782B9B04CC0004C97F /* SoundsList.swift */,
 				6E06AA792B9B04CC0004C97F /* SoundsRow.swift */,
 				6E06AA822B9B19430004C97F /* CircleImage.swift */,
+				6EA632D02BA1A0F100691FB0 /* SoundPlayer.swift */,
 			);
 			path = " Views";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				6E06AA832B9B19430004C97F /* CircleImage.swift in Sources */,
 				6E06AA7E2B9B04CC0004C97F /* ContentView.swift in Sources */,
 				6EA8E67C2B96061900E3DB5D /* SleepySoundsApp.swift in Sources */,
+				6EA632D12BA1A0F100691FB0 /* SoundPlayer.swift in Sources */,
 				6E06AA802B9B04CC0004C97F /* SoundsList.swift in Sources */,
 				6E06AA7B2B9B04CC0004C97F /* ModelData.swift in Sources */,
 				6E06AA812B9B04CC0004C97F /* SoundsRow.swift in Sources */,
