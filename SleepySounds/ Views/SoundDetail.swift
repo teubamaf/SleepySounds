@@ -16,7 +16,7 @@ struct SoundDetail: View {
         
         
         VStack {
-            Image("RainFast")
+            Image("RainFast") // TODO change Picture
                 .resizable()
                 .frame(height: 300)
                 .aspectRatio(contentMode: .fill)
