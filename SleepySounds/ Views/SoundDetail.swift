@@ -15,24 +15,35 @@ struct SoundDetail: View {
     var body: some View {
         
         
-        ScrollView{
-            VStack{
-                CircleImage(image: sound.image).offset(y:100)
-                
-            }
+        VStack {
+            Image("RainFast").resizable().frame(height: 300)
+            CircleImage(image: sound.image)
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            
             
             VStack(alignment: .leading) {
-                Divider()
                 Text(sound.name)
                     .font(.title)
                 HStack {
-                    Spacer()
                     Text(sound.description)
+                    Spacer()
+                    if sound.isFavorite {
+                                    Image(systemName: "star.fill")
+                                        .foregroundStyle(.yellow)
+                                }
+                    
                 }
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+                
+                
                 Divider()
             }
+            .padding()
+            
+            
+            Spacer()
         }
     }
 }
