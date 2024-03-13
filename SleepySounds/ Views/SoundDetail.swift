@@ -16,7 +16,10 @@ struct SoundDetail: View {
         
         
         VStack {
-            Image("RainFast").resizable().frame(height: 300)
+            Image("RainFast")
+                .resizable()
+                .frame(height: 300)
+                .aspectRatio(contentMode: .fill)
             CircleImage(image: sound.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
@@ -39,11 +42,14 @@ struct SoundDetail: View {
                 
                 
                 Divider()
+                VStack(alignment: .leading){
+                    SoundPlayer(sound: sound)
+                }
             }
             .padding()
-            
-            
             Spacer()
+            
+            
         }
     }
 }

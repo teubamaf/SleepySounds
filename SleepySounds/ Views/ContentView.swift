@@ -14,11 +14,11 @@ struct ContentView: View {
                 Text("Sounds")
                 Image(systemName:"headphones")
             }
-            SoundPlayer().tabItem {
+            /*SoundPlayer().tabItem {
                     Image(systemName:"playpause.circle.fill")
                     Text("Player")
-                }
-            SoundPlayer().tabItem {
+                }*/
+            SettingsDetails().tabItem {
                     Image(systemName:"gearshape.fill")
                     Text("Settings")
                 }
