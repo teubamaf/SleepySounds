@@ -13,6 +13,7 @@ struct SoundPlayer: View {
     @State var audioPlayer: AVAudioPlayer!
     
     var sound : Sounds
+    @State private var volume: Float = 0.5
     
     var body: some View {
         ZStack {
@@ -32,6 +33,11 @@ struct SoundPlayer: View {
                             .aspectRatio(contentMode: .fit)
                     }
                     Spacer()
+                    Slider(value: $volume, in: 0...1) { isEditing in
+                        if isEditing {
+                            audioPlayer.volume = volume
+                        }
+                    }.padding()
                 }
             }
         }

@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import MessageUI
 
 struct SettingsDetails: View {
+    
+    let mailObject = ""
     @State private var isModalPresented = false
 
         var body: some View {
@@ -27,11 +30,7 @@ struct SettingsDetails: View {
                             }
                     }
                 }
-                
-                
-                
             }
-            
         }
     }
 
@@ -51,6 +50,8 @@ struct ModalTexte: View {
         }
     }
 }
+
+
 
 
 #Preview {
