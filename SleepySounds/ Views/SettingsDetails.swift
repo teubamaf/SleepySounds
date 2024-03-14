@@ -9,50 +9,21 @@ import SwiftUI
 import MessageUI
 
 struct SettingsDetails: View {
-    
-    let mailObject = ""
-    @State private var isModalPresented = false
-
-        var body: some View {
-            ZStack{
-                VStack(alignment: .leading){
-                    Text("Created by Amaury")
-                    HStack{
-                        Button(action: {
-                                self.isModalPresented = true
-                            }) {
-                                Text("Bugs ?")
-                            }
-                            .sheet(isPresented: $isModalPresented) {
-                                ModalTexte(texte: "Décriver votre problème", onClose: {
-                                    self.isModalPresented = false
-                                })
-                            }
-                    }
-                }
-            }
-        }
-    }
-
-
-struct ModalTexte: View {
-    var texte: String
-    let onClose: () -> Void
-
     var body: some View {
-        VStack {
-            Text(texte)
-            Button(action: {
-                onClose()
-            }) {
-                Text("Fermer")
-            }
+        ZStack{
+            Text("Settings").font(.title2)
         }
+        Spacer()
+        VStack(){
+            Text("Bugs ?")
+            Text("Contact me at")
+            Text("contact@amaurydurand.dev")
+        }
+        HStack(alignment: .bottom) {
+            Text("Created with ♥ by Amaury")
+        }.padding()
     }
 }
-
-
-
 
 #Preview {
     SettingsDetails()
